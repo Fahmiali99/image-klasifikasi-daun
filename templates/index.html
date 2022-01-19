@@ -1,88 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
-        <title>Klasifikasi Daun</title>
-    </head>
-    <body>
-        <section
-            class="
-                flex
-                justify-center
-                items-center
-                w-screen
-                h-screen
-                bg-green-100
-            "
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css"
+    />
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="postcss.config.js"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Klasifikasi Daun</title>
+  </head>
+  <body>
+    <header
+      class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-green-500"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+          <svg
+            width="32"
+            height="36"
+            viewBox="0 0 32 36"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.922 35.798c-.946 0-1.852-.228-2.549-.638l-10.825-6.379c-1.428-.843-2.549-2.82-2.549-4.501v-12.762c0-1.681 1.12-3.663 2.549-4.501l10.825-6.379c.696-.41 1.602-.638 2.549-.638.946 0 1.852.228 2.549.638l10.825 6.379c1.428.843 2.549 2.82 2.549 4.501v12.762c0 1.681-1.12 3.663-2.549 4.501l-10.825 6.379c-.696.41-1.602.638-2.549.638zm0-33.474c-.545 0-1.058.118-1.406.323l-10.825 6.383c-.737.433-1.406 1.617-1.406 2.488v12.762c0 .866.67 2.05 1.406 2.488l10.825 6.379c.348.205.862.323 1.406.323.545 0 1.058-.118 1.406-.323l10.825-6.383c.737-.433 1.406-1.617 1.406-2.488v-12.757c0-.866-.67-2.05-1.406-2.488l-10.825-6.379c-.348-.21-.862-.328-1.406-.328zM26.024 13.104l-7.205 13.258-3.053-5.777-3.071 5.777-7.187-13.258h4.343l2.803 5.189 3.107-5.832 3.089 5.832 2.821-5.189h4.352z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <label for="menu-toggle" class="pointer-cursor lg:hidden block">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul
+            class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0"
+          >
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-white"
+                href="#"
+                >Klasifikasi</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-white"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-white"
+                href="#"
+                >Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2 text-white"
+                href="#"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="#"
+          class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor"
         >
-            <main
-                class="
-                    flex flex-col
-                    justify-center
-                    items-center
-                    p-16
-                    bg-white
-                    rounded-lg
-                "
+        </a>
+      </div>
+    </header>
+
+    <div class="container bg-green-100" style="width: 100%">
+      <div class="container-in p-6">
+        <div
+          class="flex flex-col justify-center items-center bg-white rounded-lg bg-white w-96 container-isi p-8"
+        >
+          <h1 class="text-3xl text-bold">Klasifikasi Daun</h1>
+
+          {% if uploaded_image %}
+          <img
+            src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}"
+            class="mt-8 mb-4 h-48 border-8 bg-green-200 rounded-md"
+          />
+          {% else %}
+          <div
+            class="flex justify-center items-center my-8 w-48 h-48 border-8 bg-slate-50 rounded-md"
+          >
+            <p class="text-center">
+              Masukkan gambar Daun Belimbing Wuluh atau Daun Nangka
+            </p>
+          </div>
+          {% endif %} {% if prediction %}
+          <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
+          {% endif %}
+
+          <form
+            method="post"
+            enctype="multipart/form-data"
+            class="flex flex-col upload-form"
+          >
+            <input
+              type="file"
+              name="image"
+              class="mb-4 p-4 border-8 bg-slate-50 rounded-md bg-slate-50"
+            />
+            <button
+              type="submit"
+              class="p-4 bg-green-600 text-white rounded-md"
             >
-                <h1 class="text-3xl text-bold">Klasifikasi Daun</h1>
-
-                {% if uploaded_image %}
-                <img
-                    src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}"
-                    class="mt-8 mb-4 h-48 border-8 bg-green-200 rounded-md"
-                />
-                {% else %}
-                <div
-                    class="
-                        flex
-                        justify-center
-                        items-center
-                        my-8
-                        w-48
-                        h-48
-                        border-8 bg-slate-50
-                        rounded-md
-                    "
-                >
-                    <p class="text-center">
-                        Masukkan gambar Daun Belimbing Wuluh atau Daun Nangka
-                    </p>
-                </div>
-                {% endif %} {% if prediction %}
-                <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
-                {% endif %}
-
-                <form
-                    method="post"
-                    enctype="multipart/form-data"
-                    class="flex flex-col"
-                >
-                    <input
-                        type="file"
-                        name="image"
-                        class="
-                            mb-4
-                            p-4
-                            border-8 bg-slate-50
-                            rounded-md
-                            bg-slate-50
-                        "
-                    />
-                    <button
-                        type="submit"
-                        class="p-4 bg-green-600 text-white rounded-md"
-                    >
-                        Prediksi Gambar
-                    </button>
-                </form>
-            </main>
-        </section>
-    </body>
+              Prediksi Gambar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

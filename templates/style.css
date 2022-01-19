@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  width: 100%;
+}
+.container-in {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.upload-form {
+  width: 108%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-isi {
+    width: 100%;
+  }
+}
