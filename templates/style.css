@@ -34,6 +34,12 @@ header {
   justify-content: center;
 }
 
+.human {
+  width: 100;
+  display: flex;
+  justify-content: center;
+}
+
 #menu-toggle:checked + #menu {
   display: block;
 }
@@ -42,8 +48,27 @@ header {
   width: 108%;
 }
 
+.text-leb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.klasifikasi {
+  box-shadow: #a1ffe0 0px 8px 24px;
+}
+
+.klasifikasi:hover {
+  background-color: #049665;
+}
+
 @media only screen and (max-width: 768px) {
   .container-isi {
     width: 100%;
+  }
+  .about-team {
+    width: 90%;
+    display: flex;
+    justify-content: center;
   }
 }
