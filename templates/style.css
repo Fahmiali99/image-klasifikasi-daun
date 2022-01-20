@@ -1,14 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  width: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 h1,
 h2,
@@ -53,8 +45,13 @@ header {
   display: block;
 }
 
+nav {
+  width: 100%;
+}
+
 .upload-form {
-  width: 108%;
+  width: 85%;
+  justify-content: center;
 }
 
 .text-leb {
@@ -64,11 +61,15 @@ header {
 }
 
 .klasifikasi {
-  box-shadow: #a1ffe0 0px 8px 24px;
+  box-shadow: #9ec2ff 0px 8px 24px;
 }
 
 .klasifikasi:hover {
-  background-color: #049665;
+  background-color: #5690f5;
+}
+
+.warna {
+  background-color: #f6f6f6;
 }
 
 @media only screen and (max-width: 768px) {
