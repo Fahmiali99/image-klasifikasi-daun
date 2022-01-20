@@ -86,4 +86,13 @@ nav {
     display: flex;
     justify-content: center;
   }
+
+  .sec1 {
+    padding-top: 60px;
+    padding: 30px;
+  }
+
+  .titlee {
+    font-size: 30px;
+  }
 }
