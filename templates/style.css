@@ -34,6 +34,10 @@ header {
   justify-content: center;
 }
 
+.klas {
+  width: 100%;
+}
+
 .main-center {
   display: flex;
   justify-content: center;
