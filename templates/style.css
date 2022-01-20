@@ -77,6 +77,13 @@ nav {
   transition: background-color 200ms linear;
 }
 
+.sec1 {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 64px;
+}
+
 @media only screen and (max-width: 768px) {
   .container-isi {
     width: 100%;
@@ -88,8 +95,10 @@ nav {
   }
 
   .sec1 {
-    padding-top: 60px;
-    padding: 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 40px;
   }
 
   .titlee {
