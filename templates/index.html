@@ -121,46 +121,48 @@
     </div>
 
     <div class="bg-green-50" style="width: 100%">
-      <div class="container-in p-6">
-        <div
-          class="flex shadow-md flex-col justify-center items-center bg-white rounded-lg bg-white w-96 container-isi p-10"
-        >
-          <h1 class="text-3xl text-bold">Klasifikasi Daun</h1>
-
-          {% if uploaded_image %}
-          <img
-            src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}"
-            class="mt-8 mb-4 h-48 border-8 bg-green-200 rounded-md"
-          />
-          {% else %}
+      <div class="main-center">
+        <div class="container-in p-6">
           <div
-            class="flex justify-center items-center my-8 w-48 h-48 border-8 bg-slate-50 rounded-md"
+            class="flex shadow-md flex-col justify-center items-center bg-white rounded-lg bg-white w-96 container-isi p-10"
           >
-            <p class="text-center">
-              Masukkan gambar Daun Belimbing Wuluh atau Daun Nangka
-            </p>
-          </div>
-          {% endif %} {% if prediction %}
-          <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
-          {% endif %}
+            <h1 class="text-3xl text-bold">Klasifikasi Daun</h1>
 
-          <form
-            method="post"
-            enctype="multipart/form-data"
-            class="flex flex-col upload-form p-3"
-          >
-            <input
-              type="file"
-              name="image"
-              class="mb-4 p-4 border-8 bg-slate-50 rounded-md bg-slate-50"
+            {% if uploaded_image %}
+            <img
+              src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}"
+              class="mt-8 mb-4 h-48 border-8 bg-green-200 rounded-md"
             />
-            <button
-              type="submit"
-              class="p-4 bg-green-500 text-white rounded-md"
+            {% else %}
+            <div
+              class="flex justify-center items-center my-8 w-48 h-48 border-8 bg-slate-50 rounded-md"
             >
-              Prediksi Gambar
-            </button>
-          </form>
+              <p class="text-center">
+                Masukkan gambar Daun Belimbing Wuluh atau Daun Nangka
+              </p>
+            </div>
+            {% endif %} {% if prediction %}
+            <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
+            {% endif %}
+
+            <form
+              method="post"
+              enctype="multipart/form-data"
+              class="flex flex-col upload-form p-3"
+            >
+              <input
+                type="file"
+                name="image"
+                class="mb-4 p-4 border-8 bg-slate-50 rounded-md bg-slate-50"
+              />
+              <button
+                type="submit"
+                class="p-4 bg-green-500 text-white rounded-md"
+              >
+                Prediksi Gambar
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

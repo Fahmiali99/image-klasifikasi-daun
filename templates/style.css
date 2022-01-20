@@ -34,6 +34,11 @@ header {
   justify-content: center;
 }
 
+.main-center {
+  display: flex;
+  justify-content: center;
+}
+
 .human {
   width: 100;
   display: flex;
