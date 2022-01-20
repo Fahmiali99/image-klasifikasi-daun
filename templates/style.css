@@ -54,11 +54,6 @@ nav {
   color: white;
 }
 
-/* .upload-form {
-  width: 75%;
-  justify-content: center;
-} */
-
 .text-leb {
   width: 100%;
   display: flex;
@@ -82,11 +77,6 @@ nav {
   transition: background-color 200ms linear;
 }
 
-.home-elements {
-  position: absolute;
-  z-index: -99;
-}
-
 @media only screen and (max-width: 768px) {
   .container-isi {
     width: 100%;
@@ -96,8 +86,4 @@ nav {
     display: flex;
     justify-content: center;
   }
-
-  /* .upload-form {
-    width: 10%;
-  } */
 }

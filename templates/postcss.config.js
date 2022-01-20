@@ -11,9 +11,5 @@ module.exports = {
   ],
 };
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
-});
+$("klasifikasi").first().click().scrollTo("#klasifikasi");
+$("about").first().click().scrollTo("#about");
