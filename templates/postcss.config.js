@@ -10,3 +10,10 @@ module.exports = {
     process.env.NODE_ENV === "production" ? [purgecss, require("cssnano")] : [],
   ],
 };
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
