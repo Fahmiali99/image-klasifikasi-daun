@@ -94,10 +94,12 @@
         >
           <div class="p-20">
             <div class="text-4xl">
-              <h1 class="titlee">Welcome to Leaf Clasification</h1>
+              <h1 class="titlee font-semibold">
+                Welcome to Leaf Clasification
+              </h1>
             </div>
             <div>
-              <p class="mt-2">
+              <p class="mt-2 font-medium text-gray-500">
                 Anda bingung mengklasifikasikan daun? Disini solusi anda dalam
                 membedakan daun nagka dan daun blimbing wuluh
               </p>
@@ -125,7 +127,9 @@
       <div
         class="flex shadow-md flex-col justify-center items-center bg-white rounded-lg bg-white container-isi"
       >
-        <h1 class="text-3xl text-bold mt-10">Klasifikasi Daun</h1>
+        <h1 class="text-3xl text-bold mt-10 titlee font-semibold">
+          Klasifikasi Daun
+        </h1>
 
         {% if uploaded_image %}
         <img
@@ -136,12 +140,14 @@
         <div
           class="flex justify-center items-center my-8 w-48 h-48 border-8 bg-slate-50 rounded-md"
         >
-          <p class="text-center">
+          <p class="text-center font-medium text-gray-500">
             Masukkan gambar Daun Belimbing Wuluh atau Daun Nangka
           </p>
         </div>
         {% endif %} {% if prediction %}
-        <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
+        <p class="mb-8 font-medium text-gray-500">
+          Hasil Prediksi: {{prediction}}
+        </p>
         {% endif %}
 
         <form
@@ -167,9 +173,11 @@
         style="width: 100%; display: flex; justify-content: center"
       >
         <div class="w-82" id="about">
-          <h3 class="text-4xl text-center pt-7 titlee">About Our Team</h3>
+          <h3 class="text-4xl text-center pt-7 titlee font-semibold">
+            About Our Team
+          </h3>
           <div class="text-leb">
-            <p class="text-center about-team">
+            <p class="text-center about-team font-medium text-gray-500">
               Untuk membangun suatu project Artificial Intelligence kami
               memiliki team, sebagai berikut
             </p>
@@ -191,9 +199,9 @@
                 />
               </div>
             </div>
-            <div class="text-2xl pt-5">
-              <h1>Fahmi Ali Husni</h1>
-              <p>201910370311330</p>
+            <div>
+              <h1 class="text-2xl pt-5 font-semibold">Fahmi Ali Husni</h1>
+              <p class="text-1xl font-medium text-gray-500">201910370311330</p>
             </div>
           </div>
         </div>
@@ -209,9 +217,9 @@
                 />
               </div>
             </div>
-            <div class="text-2xl pt-5">
-              <h1>Rahmi Nurazizah</h1>
-              <p>201910370311318</p>
+            <div>
+              <h1 class="text-2xl pt-5 font-semibold">Rahmi Nurazizah</h1>
+              <p class="text-1xl font-medium text-gray-500">201910370311318</p>
             </div>
           </div>
         </div>
@@ -326,9 +334,7 @@
           </div>
         </div>
       </div>
-      <div class="py-6 text-sm text-center dark:text-coolGray-400">
-        © 1968 Company Co. All rights reserved.
-      </div>
+      <div class="py-6 text-sm text-center dark:text-coolGray-400"></div>
     </footer>
   </body>
 </html>

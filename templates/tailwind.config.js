@@ -481,3 +481,13 @@ module.exports = {
   corePlugins: {},
   plugins: [],
 };
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
+    },
+  },
+};
