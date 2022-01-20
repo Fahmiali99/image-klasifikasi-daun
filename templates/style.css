@@ -18,7 +18,7 @@ h6 {
   font-size: 18px;
 } */
 
-header {
+/* header {
   width: 100%;
 }
 .container-in {
@@ -78,13 +78,6 @@ nav {
   transition: background-color 200ms linear;
 }
 
-/* .sec1 {
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 64px;
-} */
-
 @media only screen and (max-width: 768px) {
   .container-isi {
     width: 100%;
@@ -105,4 +98,4 @@ nav {
   .titlee {
     font-size: 30px;
   }
-}
+} */
