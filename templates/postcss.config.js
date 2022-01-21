@@ -10,6 +10,3 @@ module.exports = {
     process.env.NODE_ENV === "production" ? [purgecss, require("cssnano")] : [],
   ],
 };
-
-$("klasifikasi").first().click().scrollTo("#klasifikasi");
-$("about").first().click().scrollTo("#about");
